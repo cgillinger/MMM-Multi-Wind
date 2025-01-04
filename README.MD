@@ -184,13 +184,6 @@ All contributions are welcome, especially:
 - Documentation improvements
 - Translations
 
-## Future Plans
-
-Features I'm planning to add:
-- Support for more weather providers
-- Additional display formats
-- Historical data tracking
-- Wind alert thresholds
 
 ## License
 
