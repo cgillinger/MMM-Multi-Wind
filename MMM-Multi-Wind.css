@@ -1,0 +1,115 @@
+/* MMM-Multi-Wind.css
+ * 
+ * Styles for MMM-Multi-Wind MagicMirror module
+ * 
+ * Version: 1.0.0
+ * 
+ * Version history:
+ * 1.0.0 - Initial version
+ *       - Added support for both vertical and horizontal layouts
+ *       - Implemented consistent styling across providers
+ *       - Added wind intensity color coding
+ * 
+ * @author Christian Gillinger
+ * @license MIT
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ */
+
+/* Direction arrows - Clear cyan for good visibility */
+.MMM-Multi-Wind .wi[class*='wi-direction-'] {
+    font-size: 190%;
+    color: #00E5FF;  /* Bright cyan */
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Wind condition icons - Color intensity matches wind intensity */
+/* Calm */
+.MMM-Multi-Wind .wi-cloud {
+    color: #B0BEC5;  /* Light blue-grey */
+}
+
+/* Light winds */
+.MMM-Multi-Wind .wi-windy {
+    color: #4FC3F7;  /* Light blue */
+}
+
+/* Strong winds */
+.MMM-Multi-Wind .wi-strong-wind {
+    color: #2196F3;  /* Medium blue */
+}
+
+/* Gale */
+.MMM-Multi-Wind .wi-gale-warning {
+    color: #1976D2;  /* Darker blue */
+}
+
+/* Storm */
+.MMM-Multi-Wind .wi-storm-warning {
+    color: #0D47A1;  /* Very dark blue */
+}
+
+/* Hurricane */
+.MMM-Multi-Wind .wi-hurricane-warning {
+    color: #1A237E;  /* Deep blue with slight purple tint */
+}
+
+/* Layout styles */
+.wind-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;  /* Space between elements */
+    line-height: 1;  /* Ensure consistent vertical alignment */
+}
+
+.wind-horizontal .wind-speed,
+.wind-horizontal .wind-direction {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    gap: 4px;  /* Space between icon and text */
+}
+
+.wind-horizontal .wind-direction::before {
+    content: "|";
+    margin: 0 8px;  /* Equal spacing on both sides of the separator */
+    opacity: 0.5;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+.wind-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+/* Generic icon and text styles */
+.MMM-Multi-Wind .wi {
+    margin-right: 8px;
+}
+
+.MMM-Multi-Wind .wind-speed,
+.MMM-Multi-Wind .wind-direction {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Loading and error states */
+.MMM-Multi-Wind .loading,
+.MMM-Multi-Wind .error {
+    opacity: 0.5;
+    font-style: italic;
+}

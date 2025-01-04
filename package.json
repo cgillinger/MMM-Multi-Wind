@@ -1,0 +1,34 @@
+{
+    "name": "MMM-Multi-Wind",
+    "version": "1.0.0",
+    "description": "A MagicMirror² module for displaying wind data from multiple providers (SMHI, YR)",
+    "main": "MMM-Multi-Wind.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/christian-gillinger/MMM-Multi-Wind.git"
+    },
+    "keywords": [
+        "MagicMirror",
+        "weather",
+        "wind",
+        "SMHI",
+        "YR",
+        "meteorology"
+    ],
+    "author": "Christian Gillinger",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/christian-gillinger/MMM-Multi-Wind/issues"
+    },
+    "homepage": "https://github.com/christian-gillinger/MMM-Multi-Wind#readme",
+    "dependencies": {
+        "node-fetch": "^2.6.1"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0"
+    }
+}
