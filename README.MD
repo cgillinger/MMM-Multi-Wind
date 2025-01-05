@@ -8,12 +8,15 @@ Default display (Swedish):
 ![MMM-Multi-Wind Screenshot](/screenshots/screenshot.png)
 
 Norwegian display:
+
 ![MMM-Multi-Wind Norwegian](/screenshots/screenshot_no.png)
 
 Danish display:
+
 ![MMM-Multi-Wind Danish](/screenshots/screenshot_da.png)
 
 Beaufort scale display:
+
 ![MMM-Multi-Wind Beaufort](/screenshots/screenshot_beaufort.png)
 
 ## How It Works
