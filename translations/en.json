@@ -9,5 +9,13 @@
     "BREEZE": "Breeze",
     "GALE": "Gale",
     "STORM": "Storm",
-    "HURRICANE": "Hurricane"
+    "HURRICANE": "Hurricane",
+    "N": "North",
+    "NE": "Northeast",
+    "E": "East",
+    "SE": "Southeast",
+    "S": "South",
+    "SW": "Southwest",
+    "W": "West",
+    "NW": "Northwest"
 }

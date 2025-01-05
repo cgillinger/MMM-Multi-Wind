@@ -4,7 +4,17 @@ A MagicMirror² module that displays wind conditions from either SMHI (Swedish M
 
 ## What Does It Look Like?
 
-[Screenshot coming soon]
+Default display (Swedish):
+![MMM-Multi-Wind Screenshot](/screenshots/screenshot.png)
+
+Norwegian display:
+![MMM-Multi-Wind Norwegian](/screenshots/screenshot_no.png)
+
+Danish display:
+![MMM-Multi-Wind Danish](/screenshots/screenshot_da.png)
+
+Beaufort scale display:
+![MMM-Multi-Wind Beaufort](/screenshots/screenshot_beaufort.png)
 
 ## How It Works
 
@@ -90,8 +100,19 @@ Here's every option you can customize:
 | `directionType` | How to show direction ("compass" or "degrees")| "compass"       |
 | `displayType`   | Speed display ("textsea", "beaufort", "ms")  | "textsea"       |
 | `iconOnly`      | Show only icons without text                 | false           |
-| `language`      | Interface language ("en" or "sv")            | "en"            |
 | `layout`        | Display layout ("vertical" or "horizontal")   | "vertical"      |
+
+### Language Support
+
+The module follows MagicMirror's global language settings as defined in your `config.js`. It supports:
+- English
+- Swedish
+- Danish
+- Norwegian
+- Finnish
+- Icelandic
+
+To change the language, update the global `language` setting in your MagicMirror's `config.js` file.
 
 ### Example Configurations
 
@@ -154,8 +175,8 @@ Here's every option you can customize:
      ```
 
 4. **Wrong language?**
-   - Make sure `language` in config matches available options
-   - Check that translation files exist
+   - Check your MagicMirror's global language setting in config.js
+   - Verify that the language is supported by the module
 
 ### Provider Coverage
 
@@ -184,6 +205,19 @@ All contributions are welcome, especially:
 - Documentation improvements
 - Translations
 
+## Version History
+
+### 2.0.0
+- Added support for all Nordic languages (Danish, Norwegian, Finnish, Icelandic)
+- Implemented nautical wind direction terms
+- Enhanced error handling and logging
+- Improved data refresh reliability
+
+### 1.0.0
+- Initial version with support for SMHI and YR
+- Basic English and Swedish translations
+- Provider selection in config
+- Unified data handling
 
 ## License
 

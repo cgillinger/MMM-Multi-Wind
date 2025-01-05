@@ -1,0 +1,22 @@
+{
+    "LOADING": "Hleður vindgögn...",
+    "ERROR": "Villa við að hlaða vindgögn",
+    "WIND_SPEED": "Vindur",
+    "WIND_DIRECTION": "Stefna",
+    "MS": "m/s",
+    "BEAUFORT": "Bft",
+    "CALM": "Logn",
+    "BREEZE": "Gola",
+    "GALE": "Stormur",
+    "STORM": "Rok",
+    "HURRICANE": "Fárviðri",
+  
+    "N": "Norðlægur",
+    "NE": "Norðaustlægur",
+    "E": "Austlægur",
+    "SE": "Suðaustlægur",
+    "S": "Suðlægur",
+    "SW": "Suðvestlægur",
+    "W": "Vestlægur",
+    "NW": "Norðvestlægur"
+}

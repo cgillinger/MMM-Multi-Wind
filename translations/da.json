@@ -1,0 +1,22 @@
+{
+    "LOADING": "Indlæser vinddata...",
+    "ERROR": "Kunne ikke indlæse vinddata",
+    "WIND_SPEED": "Vind",
+    "WIND_DIRECTION": "Retning",
+    "MS": "m/s",
+    "BEAUFORT": "Bft",
+    "CALM": "Stille",
+    "BREEZE": "Brise",
+    "GALE": "Kuling",
+    "STORM": "Storm",
+    "HURRICANE": "Orkan",
+   
+    "N": "Nordlig",
+    "NE": "Nordøstlig",
+    "E": "Østlig",
+    "SE": "Sydøstlig",
+    "S": "Sydlig",
+    "SW": "Sydvestlig",
+    "W": "Vestlig",
+    "NW": "Nordvestlig"
+}

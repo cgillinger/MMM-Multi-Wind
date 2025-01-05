@@ -9,5 +9,14 @@
     "BREEZE": "Bris",
     "GALE": "Kuling",
     "STORM": "Storm",
-    "HURRICANE": "Orkan"
+    "HURRICANE": "Orkan",
+   
+    "N": "Nordlig",
+    "NE": "Nordostlig",
+    "E": "Ostlig",
+    "SE": "Sydostlig",
+    "S": "Sydlig",
+    "SW": "Sydvästlig",
+    "W": "Västlig", 
+    "NW": "Nordvästlig"
 }

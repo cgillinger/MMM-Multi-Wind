@@ -1,0 +1,22 @@
+{
+    "LOADING": "Ladataan tuulitietoja...",
+    "ERROR": "Tuulitietojen lataus epäonnistui",
+    "WIND_SPEED": "Tuuli",
+    "WIND_DIRECTION": "Suunta",
+    "MS": "m/s",
+    "BEAUFORT": "Bft",
+    "CALM": "Tyyntä",
+    "BREEZE": "Tuulenvire",
+    "GALE": "Kova tuuli",
+    "STORM": "Myrsky",
+    "HURRICANE": "Hirmumyrsky",
+ 
+    "N": "Pohjoisesta",
+    "NE": "Koillisesta",
+    "E": "Idästä",
+    "SE": "Kaakosta",
+    "S": "Etelästä",
+    "SW": "Lounaasta",
+    "W": "Lännestä",
+    "NW": "Luoteesta"
+}

@@ -2,9 +2,13 @@
  * 
  * Styles for MMM-Multi-Wind MagicMirror module
  * 
- * Version: 1.0.0
+ * Version: 2.1.0
  * 
  * Version history:
+ * 2.1.0 - 2024-01-05
+ *       - Added Beaufort icon styles with corresponding color scheme
+ *       - Enhanced icon styling consistency across display types
+ *       - Improved selector specificity for better maintenance
  * 1.0.0 - Initial version
  *       - Added support for both vertical and horizontal layouts
  *       - Implemented consistent styling across providers
@@ -12,16 +16,14 @@
  * 
  * @author Christian Gillinger
  * @license MIT
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
+ *
+ * Style organization:
+ * 1. Direction arrow styles
+ * 2. Standard wind condition icons
+ * 3. Beaufort-specific icons
+ * 4. Layout styles (vertical/horizontal)
+ * 5. Generic icon and text styles
+ * 6. Loading and error states
  */
 
 /* Direction arrows - Clear cyan for good visibility */
@@ -32,8 +34,8 @@
     align-items: center;
 }
 
-/* Wind condition icons - Color intensity matches wind intensity */
-/* Calm */
+/* Standard wind condition icons - Color intensity matches wind speed */
+/* Calm conditions */
 .MMM-Multi-Wind .wi-cloud {
     color: #B0BEC5;  /* Light blue-grey */
 }
@@ -48,19 +50,57 @@
     color: #2196F3;  /* Medium blue */
 }
 
-/* Gale */
+/* Gale conditions */
 .MMM-Multi-Wind .wi-gale-warning {
     color: #1976D2;  /* Darker blue */
 }
 
-/* Storm */
+/* Storm conditions */
 .MMM-Multi-Wind .wi-storm-warning {
     color: #0D47A1;  /* Very dark blue */
 }
 
-/* Hurricane */
+/* Hurricane conditions */
 .MMM-Multi-Wind .wi-hurricane-warning {
     color: #1A237E;  /* Deep blue with slight purple tint */
+}
+
+/* Beaufort scale icons - Using consistent color scheme with standard icons */
+/* Force 0 (Calm: 0-0.2 m/s) */
+.MMM-Multi-Wind .wi-wind-beaufort-0 {
+    color: #B0BEC5;  /* Matches wi-cloud */
+}
+
+/* Force 1-3 (Light Air to Gentle Breeze: 0.3-5.4 m/s) */
+.MMM-Multi-Wind .wi-wind-beaufort-1,
+.MMM-Multi-Wind .wi-wind-beaufort-2,
+.MMM-Multi-Wind .wi-wind-beaufort-3 {
+    color: #4FC3F7;  /* Matches wi-windy */
+}
+
+/* Force 4-6 (Moderate to Strong Breeze: 5.5-13.8 m/s) */
+.MMM-Multi-Wind .wi-wind-beaufort-4,
+.MMM-Multi-Wind .wi-wind-beaufort-5,
+.MMM-Multi-Wind .wi-wind-beaufort-6 {
+    color: #2196F3;  /* Matches wi-strong-wind */
+}
+
+/* Force 7-9 (High Wind to Strong Gale: 13.9-24.4 m/s) */
+.MMM-Multi-Wind .wi-wind-beaufort-7,
+.MMM-Multi-Wind .wi-wind-beaufort-8,
+.MMM-Multi-Wind .wi-wind-beaufort-9 {
+    color: #1976D2;  /* Matches wi-gale-warning */
+}
+
+/* Force 10-11 (Storm to Violent Storm: 24.5-32.6 m/s) */
+.MMM-Multi-Wind .wi-wind-beaufort-10,
+.MMM-Multi-Wind .wi-wind-beaufort-11 {
+    color: #0D47A1;  /* Matches wi-storm-warning */
+}
+
+/* Force 12 (Hurricane: ≥32.7 m/s) */
+.MMM-Multi-Wind .wi-wind-beaufort-12 {
+    color: #1A237E;  /* Matches wi-hurricane-warning */
 }
 
 /* Layout styles */
