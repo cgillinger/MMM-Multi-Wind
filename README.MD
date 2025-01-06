@@ -51,7 +51,7 @@ cd ~/MagicMirror/modules
 
 2. Clone this repository:
 ```bash
-git clone https://github.com/christian-gillinger/MMM-Multi-Wind.git
+git clone https://github.com/cgillinger/MMM-Multi-Wind.git
 ```
 
 3. Install dependencies:
