@@ -4,7 +4,8 @@ A MagicMirror² module that displays wind conditions from either SMHI (Swedish M
 
 ## What Does It Look Like?
 
-Default display (Swedish):
+English display, m/s:
+
 ![MMM-Multi-Wind Screenshot](/screenshots/screenshot.png)
 
 Norwegian display:
